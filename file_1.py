@@ -56,3 +56,7 @@ print(course)
 print(course[0])
 # This will print the last character of the string, which is '.'.
 print(course[-1])
+# This will print the characters from index 0 to index 2 (3 is exclusive), which is 'Pyt'.
+print(course[0:3])
+# This will print the characters from index 1 to the end of the string, which is 'ython for Beginners'.
+print(course[1:])
