@@ -9,19 +9,45 @@ print("Done")
 # Guessing game
 
 
-secret_number = 3
-guesses = 0
-guess_limit = 3
+# secret_number = 3
+# guesses = 0
+# guess_limit = 3
 
-while guesses < guess_limit:
-    guess_number = int(input("Guess: "))
+# while guesses < guess_limit:
+#     guess_number = int(input("Guess: "))
+#     guesses = guesses + 1
+#     if guess_number == secret_number:
+#         print("Well Done! You've guessed the number")
+#         break
+#     else:
+#         print("Not the number. Try again!")
 
-    if guess_number == secret_number:
-        print("Well Done! You've guessed the number")
+# Car game
+
+command = ""
+started = False
+
+while True:
+    command = input(">").lower()
+    if command == "start":
+        if started:
+            print("Car is already started!")
+        else:
+            started = True
+            print("Car started ...")
+    elif command == "stop":
+        if not started:
+            print("Car is already stopped!")
+        else:
+            started = False
+            print("Car stopped")
+    elif command == ("help"):
+        print("""
+start - to start the car
+stop - to stop the car
+quit - to quit
+        """)
+    elif command == "quit":
         break
     else:
-        print("Not the number. Try again!")
-        guesses = guesses + 1
-
-    if guess_number != secret_number:
-        print("Sorry you failed!")
+        print("Sorry, I don't understand")
