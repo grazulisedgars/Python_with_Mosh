@@ -18,4 +18,17 @@ for i in numbers:
         largest_number = i
 print(largest_number)
 
-# In the video 2:01:56
+# Two dimensional lists
+
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+print(matrix[0][0])
+
+# Row will contain 1 list from matrix
+for row in matrix:
+    for item in row:
+        print(item)
